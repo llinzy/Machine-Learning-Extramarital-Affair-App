@@ -94,7 +94,6 @@ python-json-logger==2.0.7
 python-ranges==1.2.2
 pytz==2024.1
 -f https://rustup.rs/
-rustup
 pywinpty==2.0.10
 PyYAML==6.0.1
 pyzmq==25.1.2
