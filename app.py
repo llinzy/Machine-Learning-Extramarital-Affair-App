@@ -108,10 +108,7 @@ def predict():
     else:
         output.append("No, you are unlikely to have an affair in the future!")
     return render_template(
-        'predict.html', prediction_text=f'Your selections were: \n  Gender: {[i[0] for i in form_values][0]} \n   Children: {[i[0] for i in form_values][1]}\
-           \nYears married: {[i[0] for i in form_values][2]}  \n  Age group: {[i[0] for i in form_values][3]}  \n  Are you religious: {[i[0] for i in form_values][4]} \
-           \nLevel of education: {[i[0] for i in form_values][5]}  \n  Occupation group: {[i[0] for i in form_values][6]} \n   Happiness in marriage: {[i[0] for i in form_values][7]} \
-           \nNumber of affairs: {[i[0] for i in form_values][8]}\n' + str(output[0]))
+        'predict.html', prediction_text=str(output[0]))
         
 					 
 @app.route('/first_page')
