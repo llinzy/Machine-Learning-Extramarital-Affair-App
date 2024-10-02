@@ -97,6 +97,7 @@ input_dict={'[\'Yes\']': 1, '[\'No\']': 0, '[\'Male\']':1, '[\'Female\']':0, '[\
 @app.route("/predict", methods=['GET', 'POST'])
 def predict():
     global form_values
+    print(form_values)
     form_values=form_values[-9:]
     form_values_=[input_dict[str(i)] for i in form_values]
     
