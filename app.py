@@ -15,18 +15,21 @@ def index():
 form_values=[]
 @app.route('/QuestionOne', methods=["GET", "POST"])
 def QuestionOne():
+    global form_values
     form_values.append(list(request.form.values()))
     return render_template('QuestionOne.html', 
     gender_=[{'gender': 'Male'}, {'gender': 'Female'}])
 
 @app.route('/QuestionTwo', methods=["GET", "POST"])
 def QuestionTwo():
+    global form_values
     form_values.append(list(request.form.values()))
     return render_template('QuestionTwo.html', 
     any_children_=[{'any_children': 'Yes'}, {'any_children': 'No'}])
     
 @app.route('/QuestionThree', methods=["GET", "POST"])
 def QuestionThree():
+    global form_values
     form_values.append(list(request.form.values()))
     return render_template('QuestionThree.html', 
     years_married_=[{'years_married': '3 months or less'}, {'years_married': '4-6 months'},{'years_married': '6 months'},
@@ -34,6 +37,7 @@ def QuestionThree():
 
 @app.route('/QuestionFour', methods=["GET", "POST"])
 def QuestionFour():
+    global form_values
     form_values.append(list(request.form.values()))
     return render_template('QuestionFour.html', 
     age_=[{'age': 'under 20'}, {'age': '20-24'}, {'age': '25-29'}, {'age': '30-34'}, {'age': '35-39'}, {'age': '40-44'},
@@ -41,6 +45,7 @@ def QuestionFour():
 
 @app.route('/QuestionFive', methods=["GET", "POST"])
 def QuestionFive():
+    global form_values
     form_values.append(list(request.form.values()))
     return render_template('QuestionFive.html', 
     religiousness_=[{"religiousness":"anti"}, {"religiousness":"not at all"}, {"religiousness":"slightly"}, 
@@ -48,6 +53,7 @@ def QuestionFive():
     
 @app.route('/QuestionSix', methods=["GET", "POST"])
 def QuestionSix():
+    global form_values
     form_values.append(list(request.form.values()))
     return render_template('QuestionSix.html', 
     education_=[{"education":"grade school"}, {"education":"high school graduate"}, {"education":"some college"}, {"education":"college graduate"},
@@ -55,6 +61,7 @@ def QuestionSix():
 
 @app.route('/QuestionSeven', methods=["GET", "POST"])
 def QuestionSeven():
+    global form_values
     form_values.append(list(request.form.values()))
     return render_template('QuestionSeven.html', 
     occupation_=[{"occupation":"unskilled employees"}, {"occupation":"machine operators and semiskilled employees"}, {"occupation":"skilled manual employees"}, 
@@ -64,6 +71,7 @@ def QuestionSeven():
 
 @app.route('/QuestionEight', methods=["GET", "POST"])
 def QuestionEight():
+    global form_values
     form_values.append(list(request.form.values()))
     return render_template('QuestionEight.html', 
     rating_=[{"marriage_rating":"very unhappy"}, {"marriage_rating":"somewhat unhappy"}, {"marriage_rating":"average"}, {"marriage_rating":"happier than average"}, 
@@ -71,6 +79,7 @@ def QuestionEight():
 
 @app.route('/QuestionNine', methods=["GET", "POST"])
 def QuestionNine():
+    global form_values
     form_values.append(list(request.form.values()))
     return render_template('QuestionNine.html', 
     num_affairs_=[{"num_affairs":"no affair"},{"num_affairs":"one affair"}, {"num_affairs":"two affairs"}, {"num_affairs":"three affairs"}, {"num_affairs":"four affairs"},
@@ -79,6 +88,7 @@ def QuestionNine():
 
 @app.route('/NextPage', methods=["GET", "POST"])
 def NextPage():
+    global form_values
     form_values.append(list(request.form.values()))
     return render_template("NextPage.html")
     
