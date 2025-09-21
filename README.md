@@ -1,6 +1,6 @@
 # Machine-Learning-Extramarital-Affair-App
 
-Machine Learning App link: https://machinelearningaffairapp-2b5f1258c5ee.herokuapp.com/
+Machine Learning App link: https://machine-learning-extramarital-affair-app.onrender.com
 
 Dataset: https://www.kaggle.com/datasets/utkarshx27/fairs-extramarital-affairs-data
 
