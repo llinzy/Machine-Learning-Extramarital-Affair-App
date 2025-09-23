@@ -83,7 +83,7 @@ def QuestionNine():
     form_values.append(list(request.form.values()))
     return render_template('QuestionNine.html', 
     num_affairs_=[{"num_affairs":"no affair"},{"num_affairs":"one affair"}, {"num_affairs":"two affairs"}, {"num_affairs":"three affairs"}, {"num_affairs":"four affairs"},
-                     {"num_affairs":"five affairs"}, {"num_affairs":"three affairs"}, {"num_affairs":"seven affairs"}, {"num_affairs":"eight affairs"}, {"num_affairs":"nine affairs"},
+                     {"num_affairs":"five affairs"}, {"num_affairs":"six affairs"}, {"num_affairs":"seven affairs"}, {"num_affairs":"eight affairs"}, {"num_affairs":"nine affairs"},
                      {"num_affairs":"ten affairs"}, {"num_affairs":"eleven affairs"}, {"num_affairs":"twelve affairs or more"}])
 
 @app.route('/NextPage', methods=["GET", "POST"])
@@ -100,7 +100,7 @@ input_dict={'[\'Yes\']': 1, '[\'No\']': 0, '[\'Male\']':1, '[\'Female\']':0, '[\
 "[\'unskilled employees\']":1, "[\'machine operators and semiskilled employees\']":2, "[\'skilled manual employees\']":3, "[\'clerical and sales workers, technicians, and owners of little businesses\']":4, 
 "[\'administrative personnel, owners of small businesses, and minor professionals\']":5, "[\'business managers, proprietors of medium-sized businesses, and lesser professionals\']":6,
 "[\'higher executives of large concerns, proprietors, and major professionals\']":7, "[\'very unhappy\']":1, "[\'somewhat unhappy\']":2, "[\'average\']":3, "[\'happier than average\']":4, "[\'very happy\']":5, 
-"[\'no affair\']":0, "[\'one affair\']":1, "[\'two affairs\']":2, "[\'three affairs\']":3, "[\'four affairs\']":4, "[\'five affairs\']":5, "[\'three affairs\']":6, "[\'seven affairs\']":7, 
+"[\'no affair\']":0, "[\'one affair\']":1, "[\'two affairs\']":2, "[\'three affairs\']":3, "[\'four affairs\']":4, "[\'five affairs\']":5, "[\'six affairs\']":6, "[\'seven affairs\']":7, 
 "[\'eight affairs\']":8, "[\'nine affairs\']":9, "[\'ten affairs\']":10, "[\'eleven affairs\']":11, "[\'twelve affairs or more\']":12, "[]":0}
 
 					 
